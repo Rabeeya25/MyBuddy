@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #5c258d, #4389a2);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.8em;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+.chat-box {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 15px;
+  height: 300px;
+  overflow-y: auto;
+  margin: 15px 0;
+}
+
+.bot-message,
+.user-message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.bot-message {
+  background: rgba(255, 255, 255, 0.2);
+  align-self: flex-start;
+}
+
+.user-message {
+  background: #c084fc;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+}
+
+#user-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+#send-btn {
+  background: #a855f7;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#send-btn:hover {
+  background: #9333ea;
+}
